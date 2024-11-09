@@ -13,4 +13,5 @@ then
   opam switch create oxcaml --empty
   opam repo add with-extensions "https://github.com/janestreet/opam-repository.git#with-extensions"
   opam install -y ocaml-variants.5.2.0+flambda2 ocaml-lsp-server
+  opam clean -rsc --logs
 fi
