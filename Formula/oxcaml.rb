@@ -17,8 +17,8 @@ class Oxcaml < Formula
 
   def install
     inreplace "bin/oxcaml.sh", "%%PREFIX%%", "#{prefix}/opam"
-    inreplace "bin/oxpam", "%%PREFIX%%", "#{prefix}/opam"
     system "bash", "bin/oxcaml.sh"
+    inreplace "bin/oxpam", "%%PREFIX%%", "#{prefix}/opam"
     bin.install "bin/oxpam"
   end
 end
