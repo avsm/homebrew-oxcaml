@@ -5,7 +5,8 @@ ROOT=${1:-%%PREFIX%%}
 export OPAMROOT="${ROOT}/.opam"
 export OPAMYES=1
 
-if [[ ! -d "${ROOT}" ]]; then
+if [[ ! -d "${ROOT}" ]]
+then
   echo Initialising opam for OxCaml
   mkdir -p "${ROOT}"
   opam init -n --bare
