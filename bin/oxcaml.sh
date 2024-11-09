@@ -2,7 +2,7 @@
 
 ROOT=${1:-%%PREFIX%%}
 
-export OPAMROOT="${ROOT}/.opam"
+export OPAMROOT="${ROOT}"
 export OPAMYES=1
 
 if [[ ! -d "${ROOT}" ]]
@@ -12,6 +12,6 @@ then
   opam init -n --bare --disable-sandboxing
   opam switch create oxcaml --empty
   opam repo add with-extensions "https://github.com/janestreet/opam-repository.git#with-extensions"
-  opam install -y ocaml-variants.5.2.0+flambda2 ocaml-lsp-server
+  opam install -v ocaml-variants.5.2.0+flambda2 ocaml-lsp-server
   opam clean -rsc --logs
 fi
