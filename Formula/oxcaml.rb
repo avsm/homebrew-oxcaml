@@ -6,9 +6,10 @@ class Oxcaml < Formula
   license "LGPL-2.1-only" => { with: "OCaml-LGPL-linking-exception" }
 
   bottle do
-    root_url "https://github.com/avsm/homebrew-oxcaml/releases/download/oxcaml-5.2.0+with-extensions"
-    sha256 arm64_sequoia: "c9b4a3c5aaad1a06b31269da735ebf58f01bd8f9aadb39681b31a2cafcd6d229"
-    sha256 x86_64_linux:  "df4d8c24da8b721147dd480abf160ae8fc642e082cb5bf52be02f0f50ce82b6c"
+    root_url "https://github.com/avsm/homebrew-oxcaml/releases/download/oxcaml-5.2.0+pre1"
+    rebuild 1
+    sha256 arm64_sequoia: "69e8adf3c555130368efb5ba80612fc701a9294347cf5f91b85ceef4a8648cdf"
+    sha256 x86_64_linux:  "58a49e7d53a5c9e9ed7edb95f536ae800df97db6cd81a0b88c2addf5dba33781"
   end
 
   depends_on "autoconf"
