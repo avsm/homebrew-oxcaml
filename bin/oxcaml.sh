@@ -12,6 +12,7 @@ then
   opam init -n --bare --disable-sandboxing
   opam switch create oxcaml --empty
   #  opam repo add with-extensions "https://github.com/janestreet/opam-repository.git#with-extensions"
+  #  remove once https://github.com/janestreet/opam-repository/pull/34 is merged
   opam repo add with-extensions "https://github.com/avsm/janestreet-opam-repository.git#with-extensions"
   opam install -v ocaml-variants.5.2.0+flambda2 ocaml-lsp-server
   opam clean -rsc --logs
