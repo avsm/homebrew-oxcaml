@@ -1,18 +1,19 @@
-# Avsm Oxcaml
+# avsm/oxcaml Homebrew tap
 
 ## How do I install these formulae?
 
-`brew install avsm/oxcaml/<formula>`
+`brew install avsm/oxcaml/oxcaml`
 
-Or `brew tap avsm/oxcaml` and then `brew install <formula>`.
+Or `brew tap avsm/oxcaml` and then `brew install oxcaml`.
 
 Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
 tap "avsm/oxcaml"
-brew "<formula>"
+brew "oxcaml"
 ```
 
 ## Documentation
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+The formula will install an `oxpam` wrapper to `opam` which sets the
+appropriate opam root for the package.
