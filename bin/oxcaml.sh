@@ -1,9 +1,10 @@
-#!/bin/bash -e
+#!/bin/bash
 
 ROOT=${1:-%%PREFIX%%}
 
 export OPAMROOT="${ROOT}"
 export OPAMYES=1
+set -ex
 
 if [[ ! -d "${ROOT}" ]]
 then
