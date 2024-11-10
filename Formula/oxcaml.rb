@@ -2,7 +2,7 @@ class Oxcaml < Formula
   desc "Oxidized OCaml compiler and developer tools"
   homepage "https://github.com/oxcaml"
   url "https://github.com/avsm/homebrew-oxcaml.git", branch: "main"
-  version "5.2.0+pre1-1"
+  version "5.2.0+pre1-2"
   license "LGPL-2.1-only" => { with: "OCaml-LGPL-linking-exception" }
 
   bottle do
