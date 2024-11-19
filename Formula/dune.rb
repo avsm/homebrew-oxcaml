@@ -1,5 +1,5 @@
 class Dune < Formula
-  desc "Dune developer preview"
+  desc "Developer preview of the Dune build system with package management"
   homepage "https://preview.dune.build"
   url "https://github.com/ocaml/dune.git", branch: "main"
   version "3.17+dev"
