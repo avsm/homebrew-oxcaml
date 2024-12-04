@@ -2,7 +2,6 @@ class Dune < Formula
   desc "Developer preview of the Dune build system with package management"
   homepage "https://preview.dune.build"
   url "https://github.com/ocaml/dune.git", tag: "3.17.0"
-  version "3.17.0"
   license "LGPL-2.1-only" => { with: "OCaml-LGPL-linking-exception" }
 
   bottle do
