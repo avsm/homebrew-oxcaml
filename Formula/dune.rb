@@ -5,9 +5,9 @@ class Dune < Formula
   license "LGPL-2.1-only" => { with: "OCaml-LGPL-linking-exception" }
 
   bottle do
-    root_url "https://github.com/avsm/homebrew-oxcaml/releases/download/dune-3.17+dev-2"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "fbfbed7c1db67175eee795863b1c526dcf70a26e66900fe21a4a184343fe3c48"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8bd1abaa8d5a767aa51e8e53f5f40ecfbdd3070b34ce81eb4a1c00477dd58daa"
+    root_url "https://github.com/avsm/homebrew-oxcaml/releases/download/dune-3.17.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "471e3e840202aade916122b0081f191c8ec74ba2d6ff2a6ea0bb9966e7d4d8d0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f5d8e2d9adb4ce06241f476998540cff12b34d15af4fc344e82728562e34e075"
   end
 
   depends_on "ocaml"
