@@ -1,4 +1,0 @@
-#!/bin/sh -e
-
-export OPAMROOT="%%PREFIX%%"
-opam $*
