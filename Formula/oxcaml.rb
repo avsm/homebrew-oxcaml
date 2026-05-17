@@ -6,6 +6,12 @@ class Oxcaml < Formula
   sha256 "688b5a03c04e834b5a4166a2963ee16f67019c2130baa83cfef73d5562fdde5a"
   license "LGPL-2.1-or-later"
 
+  bottle do
+    root_url "https://github.com/avsm/homebrew-oxcaml/releases/download/oxcaml-5.2.0minus31"
+    sha256 arm64_sequoia: "00d9ce0e85c41bf8a9a90996f8088cc7f9dc9c21ec7eb23511a2deeca6eb1817"
+    sha256 x86_64_linux:  "b422a16168b750a72c9acf018e99997392df4c93c15d28a5e775e345b878358a"
+  end
+
   keg_only "it provides a parallel OCaml toolchain that conflicts with the `ocaml` formula"
 
   depends_on "autoconf" => :build
